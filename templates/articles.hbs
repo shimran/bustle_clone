@@ -1,0 +1,18 @@
+<h1>News</h1>
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead">Articles</p>
+    <ul>
+      <li>{{#link-to 'oceans'}}Oceans{{/link-to}}</li>
+      <li>{{#link-to 'bridges'}}Bridges{{/link-to}}</li>
+      <li>{{#link-to 'coffee'}}Coffee{{/link-to}}</li>
+      <li>{{#link-to 'eagles'}}Eagles{{/link-to}}</li>
+    </ul>
+
+
+    <div class="col-md-12">
+      <!-- Allows the nested route to be displayed on the same screen. -->
+      {{outlet}}
+    </div>
+  </div>
+</div>
