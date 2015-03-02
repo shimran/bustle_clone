@@ -9,6 +9,28 @@
       <li>{{#link-to 'eagles'}}Eagles{{/link-to}}</li>
     </ul>
 
+    {{#if showPicture}}
+    <span class="glyphicon glyphicon-menu-left" aria-hidden="true" {{action 'showPictures'}}>
+
+    <img src="img/coffee.jpeg" width="450px">
+    </span>
+    {{else}}
+    <span class="glyphicon glyphicon-menu-right" aria-hidden="true" {{action 'hidePictures'}}>
+      <img src="img/ocean.jpeg" width="450px">
+    </span>
+
+    <img src="img/eagle.jpeg" width="450px">
+    <img src="img/bridge.jpeg" width="450px">
+
+
+
+    <a href="#" {{action 'hidePictures'}}><img src="img/ocean.jpeg" width="450px"></a>
+    <a href="#" {{action 'hidePictures'}}><img src="img/coffee.jpeg" width="450px"></a>
+    <a href="#" {{action 'hidePictures'}}><img src="img/eagle.jpeg" width="450px"></a>
+    <a href="#" {{action 'hidePictures'}}><img src="img/bridge.jpeg" width="450px"></a>
+
+    {{/if}}
+
 
     <div class="col-md-12">
       <!-- Allows the nested route to be displayed on the same screen. -->
